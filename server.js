@@ -1,6 +1,7 @@
 const express = require('express')
 const server = express()
-server.user(express.json())
+const userRoutes = require('./users/userRoutes.js')
+server.use(express.json())
+server.use('', userRoutes)
 
-
-module.exports = {server}
+module.exports = server
