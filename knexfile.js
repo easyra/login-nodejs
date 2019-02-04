@@ -10,7 +10,10 @@ module.exports = {
     migrations: {
       directory: 'data/migrations'
     },
-    userNullAsDefault: true
+    seeds: {
+      directory: 'data/seeds'
+    },
+    useNullAsDefault: true
   },
 
   staging: {
