@@ -4,8 +4,10 @@ const db = require('./userModel.js')
 
 router.get('/',(req,res) => {
   db.getAllUsers().then(users => {
-    res.json(users)
-  })  
+    res.json(db.getAllUsers())
+
+  })
+  
 })
 
 module.exports = router
